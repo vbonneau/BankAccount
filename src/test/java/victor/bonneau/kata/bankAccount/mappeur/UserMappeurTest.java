@@ -10,7 +10,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import victor.bonneau.kata.bankAccount.dto.UserDto;
-import victor.bonneau.kata.bankAccount.mappeur.UserMappeur;
 import victor.bonneau.kata.bankAccount.model.User;
 
 public class UserMappeurTest {

@@ -10,16 +10,16 @@ import victor.bonneau.kata.bankAccount.exception.ObjectNotFoundException;
 import victor.bonneau.kata.bankAccount.model.Account;
 import victor.bonneau.kata.bankAccount.model.Transaction;
 import victor.bonneau.kata.bankAccount.repository.AccountRepository;
-import victor.bonneau.kata.bankAccount.repository.TransactionRipository;
+import victor.bonneau.kata.bankAccount.repository.TransactionRepository;
 
 @Service
 public class TransactionService {
 	
-	private final TransactionRipository transactionRipository;
+	private final TransactionRepository transactionRipository;
 	private final AccountRepository accountRepository;
    
 
-    public TransactionService(TransactionRipository transactionRipository, AccountRepository accountRepository) {
+    public TransactionService(TransactionRepository transactionRipository, AccountRepository accountRepository) {
         this.accountRepository = accountRepository;
 		this.transactionRipository = transactionRipository;
     }

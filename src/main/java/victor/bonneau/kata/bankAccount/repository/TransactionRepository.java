@@ -14,14 +14,14 @@ import victor.bonneau.kata.bankAccount.exception.ObjectNotFoundException;
 import victor.bonneau.kata.bankAccount.model.Transaction;
 
 @Repository
-public class TransactionRipository {
+public class TransactionRepository {
 
 	private static final String HQL_ALL_FOR_ACCOUNT = "FROM TRANSITION WHERE accunt_id = :accountId";
 	
 	@PersistenceContext
     private EntityManager entityManager;
 	
-    public TransactionRipository(EntityManager entityManager) {
+    public TransactionRepository(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
     
