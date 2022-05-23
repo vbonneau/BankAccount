@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MySQL;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE;INIT=create schema if not exists \"public\"\; SET SCHEMA public;
+    data: classpath:TABLE_USER.sql
+

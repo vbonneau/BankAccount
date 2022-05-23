@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: "victor"
+    password: "Panoramis27!"
+    url: "jdbc:mysql://localhost:3306/BankAcount?serverTimezone=UTC&createDatabaseIfNotExist=true"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: "create-drop"
+      naming.physical-strategy: "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl"
